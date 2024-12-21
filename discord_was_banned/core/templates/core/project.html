@@ -1,0 +1,13 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}мои инвестиции в ничего{% endblock title %}
+{% block content %}
+    <h2><a href="{% url 'index' %}">Назад</a></h2>
+    <h1>Мои проекты</h1>
+    <div class="projects"><a href="http://scp-wiki-de.wikidot.com/main" target="_blank"><img class="meme" src="{% static "img/в атаку.png" %}" alt=""></a>
+    <img class="meme" src="{% static "img/Снимок экрана 2024-10-26 211219.png" %}" alt=""></div>
+    <!--Шуточный проект-->
+    {% for project in projects %}
+<img src="{{ project.image.url }}" alt="">
+{% endfor %}
+    {% endblock content %}

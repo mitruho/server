@@ -1,0 +1,10 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}программирую на{% endblock title %}
+{% block content %}
+    <h2><a href="{% url "index" %}">Назад</a></h2>
+    <div class="html_X_css">
+    <img title="" src="{% static "img/css3-alt-brands-solid.svg" %}" alt="">
+    <img src="{% static "img/html5-brands-solid(1).svg" %}" alt="">
+    </div>
+    {% endblock content %}

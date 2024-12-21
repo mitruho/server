@@ -1,0 +1,23 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}Портфолио{% endblock title %}
+{% block content %}
+<div class="bio"><img src="{% static "img/photo_2024-11-24_14-54-13.jpg" %}" alt="" width = "400" height= "400" class="avatar">
+    <h1>
+    <ul class="tiny5-regular">
+        <li title="Я хороший">
+            Имя:Игорь
+        </li>
+        <li title="Я хороший">
+            Фамилия:Герасимов
+        </li>
+        <li title="Я хороший">
+            Отчество:Игоревич
+        </li>
+    </h1>
+    </ul>
+        </div>
+    <h2><a href="{% url 'about_me' %}">Обо мне</a></h2>
+    <h2><a href="{% url 'project' %}">мои проекты</a></h2>
+    <h2><a href="{% url "ya_rabotayu_s" %}">с чем я работаю</a></h2>
+{% endblock content %}
